@@ -17,6 +17,7 @@ RSpec::Matchers.define :have_success_message do |message|
     expect(page).to have_selector('div.alert.alert-success', text: message)
   end
 end
+
 def fill_valid_signup_info
   fill_in "Name", with: "Example User"
   fill_in "Email", with: "user@example.com"
